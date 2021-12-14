@@ -14,6 +14,11 @@ app.set("view engine", "ejs");
 app.set("views", './src/views');
 app.use("/public", express.static('./src/public'));
 
+//Controllers:
+
+const userController = require('./controllers/user')
+app.use('/user', userController);
+
 
 app.listen(5555, async ()=>{
     await connect();
