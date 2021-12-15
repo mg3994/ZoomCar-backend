@@ -3,13 +3,18 @@ const router = express.Router();
 
 const Signup = require("../models/signup.model");
 
-router.get("", async (req, res) => {
-  return res.render("signup");
-});
-
 router.post("", async (req, res) => {
   const signup = await Signup.create(req.body);
-  return res.render("login", {user: user})
+  console.log('signup:', signup)
+  res.render("login", {signup: signup});
 });
+
+router.get("", async (req, res) => {
+  let user = await Signup.findById().exec()
+  console.log('user:', user)
+
+  res.render("login", user);
+});
+
 
 module.exports = router;
