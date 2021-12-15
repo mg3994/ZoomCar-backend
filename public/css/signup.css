@@ -1,51 +1,139 @@
-* {
-  margin: 0px;
-  padding: 0px;
+#container {
+  margin-left: 30%;
+}
+#heading {
   font-family: "IBM Plex Sans";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  color: #1f1f1f;
+  margin-top: 20px;
 }
-hr {
-  margin: 10px;
-  border: 1px solid #eeeeee;
+#heading {
+  font-family: "IBM Plex Sans";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  color: #1f1f1f;
+  margin-top: 20px;
 }
-img {
-  width: 100%;
+#paras {
+  font-family: "IBM Plex Sans";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  color: #666;
+  margin-top: 8px;
+  padding-bottom: 16px;
 }
 #pcontainer {
   width: 420px;
   margin: auto;
 }
-
+.pimg {
+  width: 420px;
+  height: 315px;
+}
 .details {
+  font-family: "IBM Plex Sans";
   font-size: 20px;
   font-weight: 550;
   line-height: 28px;
   color: #1f1f1f;
-  margin-top: 15px;
   padding: 16px 0 24px 0;
 }
 
-.details + img {
-  width: 32px;
-  margin: 10px 0 0 30px;
-  /* margin: 100px 4px; */
-  /* border: 1px solid black; */
-  height: 30px;
+.hr {
+  width: 420px;
+  margin-top: 20px;
 }
-button {
-  background-color: white;
-  border: none;
-  font-size: 14px;
-  cursor: pointer;
-  font-weight: 900;
+.mail {
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-weight: 500;
   line-height: 16px;
   color: #10a310;
-  margin: 10px;
+  padding: 16px 0;
+  color: #10a310;
   text-decoration: none;
 }
-img + button {
-  background-color: white;
-  /* border: 1px solid black; */
-  color: gray;
-  font-size: 16px;
-  cursor: pointer;
+
+#inp {
+  width: 120%;
+  height: 54px;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+.btn {
+  margin-top: 370px;
+  width: 50%;
+  background-color: #10a310;
+  border-style: none;
+  height: 39px;
+  margin-left: 5%;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+}
+#btn {
+  margin-top: 150px;
+  width: 50%;
+  background-color: #10a310;
+  border-style: none;
+  height: 39px;
+  margin-left: 5%;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+}
+#text {
+  color: red;
+  font-size: 12px;
+}
+#text4 {
+  color: red;
+  font-size: 12px;
+}
+#phone {
+  width: 70%;
+  height: 54px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+input {
+  width: 60%;
+  height: 54px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+input:active {
+  border: #00c853;
+}
+
+.image {
+  width: 29px;
+  height: 23px;
+}
+.toolbar {
+  margin-top: 20px;
+}
+.icon {
+  display: flex;
+  margin-top: 20px;
+}
+.icon2 {
+  display: flex;
+  margin-top: 20px;
+}
+hr {
+  border: 1px solid #eeeeee;
 }

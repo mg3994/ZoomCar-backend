@@ -1,26 +1,19 @@
-//Express:
-const express = require('express');
+const express = require("express");
+const mongoose = require("mongoose");
+const connect = require("./configs/db");
+
 const app = express();
 
 app.use(express.json());
-app.use(express.urlencoded({extended: false}));
-
-//Connecting To Database:
-const connect = require('./configs/db');
-
-
-//View Engine EJS & Setting Views & Static Files:
+app.use(express.urlencoded());
 app.set("view engine", "ejs");
-app.set("views", './src/views');
-app.use("/public", express.static('./src/public'));
+app.use(express.static("public"));
 
-//Controllers:
+const signupController = require("./controllers/signup.controller");
 
-const userController = require('./controllers/user')
-app.use('/user', userController);
+app.use("/signup", signupController);
 
-
-app.listen(5555, async ()=>{
-    await connect();
-    console.log("listening on port 5555");
-})
+app.listen(2345, async (req, res) => {
+  await connect();
+  console.log("Listening on port 2345....");
+});
