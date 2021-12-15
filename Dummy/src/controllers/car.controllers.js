@@ -30,7 +30,7 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
     try {
             const car = await Car.findById(req.params.id).lean().exec();
-            return res.render( "cars/single",{
+            return res.render( "cars/bookingSummary",{
             car,
             });
     }
