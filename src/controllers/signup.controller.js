@@ -9,6 +9,7 @@ router.get("", async (req, res) => {
 
 router.post("", async (req, res) => {
   const signup = await Signup.create(req.body);
+  return res.render("login", {user: user})
 });
 
 module.exports = router;
