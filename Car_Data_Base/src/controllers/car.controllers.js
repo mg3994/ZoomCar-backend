@@ -39,6 +39,22 @@ router.get("/:id", async (req, res) => {
     }
 
 });
+
+router.get("/checkout", async (req, res) => {
+    try {
+            // const car = await Car.find({}).lean().exec();
+            return res.render( "cars/checkout",{
+           
+            });
+    }
+    catch (e) {
+        return res.status(500).json({ status: "failed", message: e.message });
+    }
+
+});
+
+
+
 router.get("/:City", async (req, res) => {
     try {
             const car = await Car.find({City:req.params.City}).lean().exec();
