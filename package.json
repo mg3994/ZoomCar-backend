@@ -1,0 +1,19 @@
+  "name": "zoomcar-backend",
+  "version": "1.0.0",
+  "description": "Hello Readers,<br>\r It was during the final week which is depicted as the construct week. We have done this project with group of 6 members and build the clone of a very popular E-Commerce Car Self Drive Booking Website in the India for “Self Drive For Self Driven”, “Zoom Car” for Learning Purpose<br> This Project is our construct week project in Unit-3 an we give a name to our project called Zoomcar Preoject. <br> I hope you will enjoy the reading….",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashraj-m/ZoomCar-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashraj-m/ZoomCar-backend/issues"
+  },
+  "homepage": "https://github.com/yashraj-m/ZoomCar-backend#readme"
+}
