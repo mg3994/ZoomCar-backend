@@ -13,7 +13,7 @@ app.use(express.static(staticPath))
 
 app.set('view engine', 'ejs')
 
-app.use("/cars",productController);
+app.use("/",productController);
 
 
 

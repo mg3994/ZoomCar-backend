@@ -14,7 +14,7 @@ router.post("/", async (req, res) => {
     }
 });
 
-router.get("/", async (req, res) => {
+router.get("/cars", async (req, res) => {
     try {
             const cars = await Car.find().lean().exec();
             return res.render(  "cars/carbooking",{
@@ -27,7 +27,7 @@ router.get("/", async (req, res) => {
 
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/cars/:id", async (req, res) => {
     try {
             const car = await Car.findById(req.params.id).lean().exec();
             return res.render( "cars/bookingSummary",{
@@ -40,11 +40,11 @@ router.get("/:id", async (req, res) => {
 
 });
 
-router.get("/checkout", async (req, res) => {
+router.get("/cars/:id/checkout", async (req, res) => {
     try {
-            // const car = await Car.find({}).lean().exec();
+            const car = await Car.findById(req.params.id).lean().exec();
             return res.render( "cars/checkout",{
-           
+           car
             });
     }
     catch (e) {
