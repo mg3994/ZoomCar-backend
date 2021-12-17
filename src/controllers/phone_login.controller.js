@@ -24,13 +24,18 @@ router.post("", body("phone_num").isLength({ min: 10, max: 10 }).withMessage("Ph
         return res.status(400).render("phone_login",{message:"",msg:a});
     }
     let user = await User.findOne({phone_num:req.body.phone_num}).lean().exec();
-    console.log("user");
+    console.log("user",user);
 
       if (!user) {
         res.render("signup", { message: "Register to Continue", msg: [] });
       }
 
-      const match = await user.comparePassword(req.body.password);
+      console.log(req.body.password);
+      let pwd = req.body.password.toString();
+      console.log(pwd);
+      const match = await user.checkPassword(pwd);
+      console.log(match);
+
 
         if(!match){
             return res.render("phone_login", { message: "Please enter correct password", msg: [] });
