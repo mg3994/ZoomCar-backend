@@ -20,6 +20,7 @@ Dom part
   display: inline-block;
   width: 100%;
   margin-top: 3%;
+  position: relative; 
   overflow: auto;
 }
 
@@ -59,7 +60,7 @@ Dom part
 .ranCarPrice {
   display: inline-block;
   width: 25%;
-  margin-left: 6%;
+  margin-left: 7%;
   margin-top: 2%;
 }
 
@@ -78,14 +79,16 @@ Dom part
   position: relative;
   top: -69%;
   left: -9%;
+  border-radius: 5px;
+  padding: 1%;
 }
 
 .ranBookNow button:hover {
-  background-color: rgb(8, 99, 4);
+  background-color: #10a310;
   color: white;
   border-style: none;
-  border-radius: 2%;
-  padding: 1%;
+  border-radius: 5px;
+  padding: 2%;
 }
 
 #options {

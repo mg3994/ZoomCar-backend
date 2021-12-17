@@ -1,6 +1,7 @@
 const Car = require("../models/car.models");
 const express = require("express");
 const router = express.Router();
+const path = require("path"); 
 
 
 router.post("/", async (req, res) => {
@@ -17,7 +18,7 @@ router.post("/", async (req, res) => {
 router.get("/cars", async (req, res) => {
     try {
         const page = +req.query.page || 2;
-        const size = +req.query.size || 3;
+        const size = +req.query.size || 5;
         const offset = (page - 1) * size;
        
             const cars = await Car.find()
@@ -79,11 +80,11 @@ router.get("/cars/:id/checkout/paymentOption", async (req, res) => {
 
 router.get("/cars/:id", async (req, res) => {
     try {
-            const car = await Car.find({City:req.params.City})
+            const cars = await Car.findById({City:req.params.id})
             .lean()
             .exec();
             return res.render( "cars/carbooking",{
-            car,
+            cars,
             });
     }
     catch (e) {

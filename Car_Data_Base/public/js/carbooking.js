@@ -31,7 +31,7 @@ if(JSON.parse(localStorage.getItem("trip"))[0]=="round"){
 
 let city = JSON.parse(localStorage.getItem("city"))[0];
 async function getData() {
-    let data = await fetch("http://localhost:5000/api/products/");
+    let data = await fetch("http://localhost:4500/cars");
 
     data = await data.json();
     // console.log(data.Mumbai);
@@ -40,67 +40,7 @@ async function getData() {
 
 getData();
 
-let parent = document.getElementById('cont')
 
-function showData(cars) {
-    parent.innerHTML = null
-        // dropoff.innerHTML = null
-        // pickup.innerHTML = null
-    cars.forEach(function(car) {
-
-        let div = document.createElement('div')
-
-
-        let img = document.createElement('img')
-        img.src = car.img
-
-        let center = document.createElement('p')
-        center.style.margin = "10px";
-        center.style.gap = "5px";
-        center.style.padding = "2px";
-
-        let location = document.createElement('p')
-        location.innerText = car.location
-
-
-        let name = document.createElement('h4')
-        name.innerText = car.name
-
-
-        let fuel = document.createElement('p')
-        fuel.innerText = car.fuel
-
-        let Seater = document.createElement('p')
-        Seater.innerText = car.Seater + " " + "Seater";
-
-        let Rating = document.createElement('h4')
-        Rating.innerText = "🌟" + " " + car.Rating;
-
-        let left = document.createElement('h3')
-
-        let price = document.createElement('h5')
-        price.innerText = car.price
-
-        let btn = document.createElement('button')
-        btn.innerHTML = "Book Now";
-
-        btn.onclick = () => {
-                addtoBook(car);
-            }
-            // dropoff.append(dropOffLocation);
-            // pickup.append(start_Date, dropOffLocation);
-        center.append(location, name, fuel, Seater, Rating)
-        left.append(price, btn)
-
-        div.append(img, center, left)
-
-        parent.append(div)
-
-
-    })
-
-
-}
 
 
 // filter function
@@ -108,7 +48,7 @@ let ninty = [];
 let onetwonty = [];
 
 async function nintyfun() {
-    let data = await fetch("http://localhost:5000/api/products/");
+    let data = await fetch("http://localhost:4500/cars");
 
     data = await data.json();
 
@@ -124,7 +64,7 @@ async function nintyfun() {
 }
 
 async function onetwontyfun() {
-    let data = await fetch("http://localhost:5000/api/products/");
+    let data = await fetch("http://localhost:4500/cars");
 
     data = await data.json();
 
@@ -147,7 +87,7 @@ let sevenSeater = [];
 // five seater filter function
 async function five() {
     fiveSeater.innerHTML = null
-    let data = await fetch("http://localhost:5000/api/products/");
+    let data = await fetch("http://localhost:4500/cars");
 
     data = await data.json();
 
@@ -165,7 +105,7 @@ async function five() {
 
 // six Seater Filter Function
 async function six() {
-    let data = await fetch("http://localhost:5000/api/products/");
+    let data = await fetch("http://localhost:4500/cars");
 
     data = await data.json();
 
@@ -184,7 +124,7 @@ async function six() {
 
 async function seven() {
     sevenSeater.innerHTML = null;
-    let data = await fetch("http://localhost:5000/api/products/");
+    let data = await fetch("http://localhost:4500/cars");
 
     data = await data.json();
 
@@ -204,7 +144,7 @@ let hatchback = [];
 let Sedan = [];
 
 async function hatchbackcar() {
-    let data = await fetch("http://localhost:5000/api/products/");
+    let data = await fetch("http://localhost:4500/cars");
 
     data = await data.json();
 
@@ -220,7 +160,7 @@ async function hatchbackcar() {
 }
 
 async function Sedancar() {
-    let data = await fetch("http://localhost:5000/api/products/");
+    let data = await fetch("http://localhost:4500/cars");
 
     data = await data.json();
 
@@ -239,7 +179,7 @@ let Home = [];
 let Airport = [];
 
 async function Homecar() {
-    let data = await fetch("http://localhost:5000/api/products/");
+    let data = await fetch("http://localhost:4500/cars");
 
     data = await data.json();
 
@@ -255,7 +195,7 @@ async function Homecar() {
 }
 
 async function Airportcar() {
-    let data = await fetch("http://localhost:5000/api/products/");
+    let data = await fetch("http://localhost:4500/cars");
 
     data = await data.json();
 

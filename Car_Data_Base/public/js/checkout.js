@@ -15,33 +15,6 @@
 // let tripFare = document.getElementById("tripFare");
 // let damagePrice=document.getElementById("ref1");
 
-let str="";
-// function showPay() {
-        // let name = document.createElement('h4');
-      
-        // name.innerText = car_check.name;
-        // let price = document.createElement('h3');
-        // let damage=document.createElement('h3');
-
-        // carCheck.append(name);
-        // navStartCheck.append(start_Date);
-        // navEndCheck.append(end_Date);
-     let demo_price = car.price;
-     console.log(demo_price);
-        for(let i=0;i<demo_price.length; i++){
-          if(demo_price[i]==="₹"){
-            continue; 
-          } else{
-            str+=demo_price[i]; 
-          }
-        }
-
-        str = Number(str);
-        let TripFare= `₹ ${str*0.85}`;   
-        let damage= `₹ ${str*0.15}`;     
-
-// }
-// showPay(); 
 module.exports={TripFare, damage}
 
 // localStorage.setItem("totalFare",JSON.stringify(str));
