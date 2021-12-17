@@ -30,18 +30,20 @@ router.post("", body("phone_num").isLength({ min: 10, max: 10 }).withMessage("Ph
         res.render("signup", { message: "Register to Continue", msg: [] });
       }
 
-      console.log(req.body.password);
-      let pwd = req.body.password.toString();
-      console.log(pwd);
-      const match = await user.checkPassword(pwd);
-      console.log(match);
+
+      if(user.password !== req.body.password) {
+        return res.render("phone_login", { message: "Please enter correct password", msg: [] })
+      }
+      
+      // const match = await user.checkPassword(pwd);
+      // console.log(match);
 
 
-        if(!match){
-            return res.render("phone_login", { message: "Please enter correct password", msg: [] });
-        }
+      //   if(!match){
+      //       return res.render("phone_login", { message: "Please enter correct password", msg: [] });
+      //   }
         console.log("login here");
-        res.render("phone_login", { message:"login successfull", msg: []})
+        res.render("home", { user})
     // } else {
     //   res.render("home", user);
     //   console.log("login successfull");

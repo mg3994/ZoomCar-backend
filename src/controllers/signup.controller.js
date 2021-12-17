@@ -33,9 +33,14 @@ body("name").isLength({min:1}).withMessage("name is required")
     console.log(req.body);
     console.log("here");
     
+    const findph = await User.findOne({phone_num:+req.body.phone_num}).lean().exec();
+    console.log('findph:', findph)
+    console.log(+req.body.phone_num);
+    if(findph) return res.status(500).render("signup",{ message:"Phone number registered. Try to login",msg:[]})
+
     let created = await User.create(req.body);
     console.log(created);
-    res.render("phone_login", { message:"", msg:[]})
+    res.redirect("/phone_login")
 } catch (e) {
     res.status(500).render("signup",{ message:"REGISTRATION FAILED",msg:[]})
 }

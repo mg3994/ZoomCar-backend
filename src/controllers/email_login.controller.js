@@ -29,13 +29,16 @@ router.post("", body("email").isEmail().withMessage("Email is required"),
         res.render("signup", { message: "Register to Continue", msg: [] });
       }
 
-      const match = await user.comparePassword(req.body.password);
+      if(user.password != req.body.password) {
+        return res.render("email_login", { message: "Please enter correct password", msg: [] });
+      }
+      // const match = await user.comparePassword(req.body.password);
 
-        if(!match){
-            return res.render("email_login", { message: "Please enter correct password", msg: [] });
-        }
+      //   if(!match){
+      //       return res.render("email_login", { message: "Please enter correct password", msg: [] });
+      //   }
         console.log("login here");
-        res.render("email_login", { message:"login successfull", msg: []})
+        res.render("home", { user})
     // } else {
     //   res.render("home", user);
     //   console.log("login successfull");

@@ -3,7 +3,7 @@ const bcrypt = require("bcryptjs")
 const userSchema = new mongoose.Schema(
   {
     phone_num: { type: Number, required: true },
-    email: { type: String, required: true },
+    email: { type: String, required: true, unique: true},
     name: { type: String, required: true },
     password: { type: String, required: true },
   },
@@ -14,25 +14,25 @@ const userSchema = new mongoose.Schema(
 );
 
 
-userSchema.pre("save", function (next){
-  if(!this.isModified("password")) return next();
-      bcrypt.hash(this.password, 10, (err, hash)=> {
-          this.password=hash;
-          return next();
-      });
+// userSchema.pre("save", function (next){
+//   if(!this.isModified("password")) return next();
+//       bcrypt.hash(this.password, 10, (err, hash)=> {
+//           this.password=hash;
+//           return next();
+//       });
  
-});
+// });
 
-userSchema.methods.checkPassword = function(password){
-  console.log("password",password);
-  return new Promise((resolve,reject)=>{
-      bcrypt.compare(password,this.password, function(err, same) {
-          if(err) return reject(err);
-          return resolve(same);
-      });
-  })
+// userSchema.methods.checkPassword = function(password){
+//   console.log("password",password);
+//   return new Promise((resolve,reject)=>{
+//       bcrypt.compare(password,this.password, function(err, same) {
+//           if(err) return reject(err);
+//           return resolve(same);
+//       });
+//   })
 
-}
+// }
 
 // userSchema.pre("save",function(next) {
 //   if(!this.isModified("password"))return next();
