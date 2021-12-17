@@ -1,4 +1,9 @@
-  #navbar {
+ body{
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+ }
+ 
+ #navbar {
       display         : flex;
       justify-content : space-between;
       border          : solid 1px black;
@@ -10,10 +15,11 @@
   /*
 Dom part
 */
-  .carCarPage {
-      display   : inline-block;
+  .ranCarPage {
+   display:inline-block;
       width     : 100%;
       margin-top: 0%;
+      overflow:auto; 
 
   }
 
@@ -26,8 +32,8 @@ Dom part
   .ranCarImage img {
       margin-top: 0%;
       width     : 100%;
-      height    : auto;
-      padding   : .2%;
+     
+     
   }
 
   .ranCarDetails {
@@ -36,8 +42,17 @@ Dom part
       margin-top : 0%;
       width      : 40%;
       height     : 100px;
+      text-align: top;
+      margin-bottom: 0%;
+      height:30%;
+      color: grey;
 
-
+  }
+  .shadow{
+      width : 100%;
+      background-color:#a8a8a8;
+      color: #1f1f1f;
+      opacity: 0.3;
   }
 
   .ranCarDetails h4 {
@@ -47,8 +62,9 @@ Dom part
   .ranCarPrice {
       display    : inline-block;
       width      : 25%;
-      margin-left: 5%;
-      text-align : center;
+      margin-left: 7%;
+      text-align : top;
+      padding: 1%;
   }
 
   .ranBookNow {

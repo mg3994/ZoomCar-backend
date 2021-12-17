@@ -16,7 +16,7 @@ router.post("/", async (req, res) => {
 
 router.get("/cars", async (req, res) => {
     try {
-        const page = +req.query.page || 1;
+        const page = +req.query.page || 2;
         const size = +req.query.size || 3;
         const offset = (page - 1) * size;
        
