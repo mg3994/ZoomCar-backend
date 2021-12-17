@@ -18,8 +18,9 @@ Dom part
   .ranCarPage {
    display:inline-block;
       width     : 100%;
-      margin-top: 0%;
+      margin-top: 5%;
       overflow:auto; 
+   
 
   }
 
@@ -37,15 +38,15 @@ Dom part
   }
 
   .ranCarDetails {
-      display    : inline-block;
-      margin-left: 5%;
-      margin-top : 0%;
-      width      : 40%;
-      height     : 100px;
-      text-align: top;
-      margin-bottom: 0%;
-      height:30%;
-      color: grey;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 0;
+    width: 40%;
+    vertical-align: top;
+    margin-bottom: 0%;
+    height: 30%;
+    color: grey;
+      
 
   }
   .shadow{
@@ -56,15 +57,13 @@ Dom part
   }
 
   .ranCarDetails h4 {
-      margin-top: 0%;
+      margin-top: 5%;
   }
-
+  
   .ranCarPrice {
       display    : inline-block;
       width      : 25%;
-      margin-left: 7%;
-      text-align : top;
-      padding: 1%;
+      margin-left: 6%;
   }
 
   .ranBookNow {
@@ -78,13 +77,16 @@ Dom part
 
   .ranBookNow button {
       width  : 65%;
-      padding: 1%;
+      margin-top: 38%;
   }
 
 
   .ranBookNow button:hover {
-      background-color: rgb(19, 228, 12);
+      background-color: rgb(8, 99, 4);
       color           : white;
+      border-style: none;
+      border-radius: 2%;
+      padding:1%;
 
   }
 
