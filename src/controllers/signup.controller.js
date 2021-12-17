@@ -1,56 +1,46 @@
 const express = require("express");
 const router = express.Router();
 
+const {body,validationResult}=require('express-validator');
 
-
-const Signup = require("../models/signup.model");
+const User = require("../models/user.model");
 
 router.get("", async (req, res) => {
-  return res.render("signup");
+  let message =  '';
+  let msg = []
+  return res.render("signup", {message, msg});
 });
 
-router.post("", async (req, res) => {
+router.post("", body("phone_num").isLength({min: 10, max:10}).withMessage("Phonenumber is required and has to a number"),
+body("email").isEmail().withMessage("email is required"),
+body("password").isLength({min:7}).withMessage("password is required and must be at least 7 characters"),
+body("name").isLength({min:1}).withMessage("name is required")
+,async (req, res) => {
   try {
-    let user = await Signup.findOne({email:req.body.email}).lean().exec();
+    const errors = validationResult(req);
+    if(!errors.isEmpty()){
+        let a=errors.array().map(({msg,param,location})=>{
+            return {
+                msg,
+            }
+        })
+       
+        return res.status(400).render("signup",{message:"",msg:a});
+    }
+    let user = await User.findOne({email:req.body.email}).lean().exec();
 
-    if(user) return res.status(500).render("signup",{ message:"user exist"});
-
-    user = await Signup.create(req.body);
-    // const token = newToken(user);
-
-    return res.render("signup")
+    if(user) return res.status(500).render("signup",{ message:"user exist. Try to login",msg:[]});
+    console.log(req.body);
+    console.log("here");
+    
+    let created = await User.create(req.body);
+    console.log(created);
+    res.render("phone_login", { message:"", msg:[]})
 } catch (e) {
-    res.status(500).render("signup",{ message:"REGISTRATION FAILED"})
+    res.status(500).render("signup",{ message:"REGISTRATION FAILED",msg:[]})
 }
 
 });
 
-// router.post("", 
-// body("phone_num").isLength({min: 10, max:10}).withMessage("phonenumber is required and has to be 10 digit"),
-// body("email").isEmail().withMessage("email is required"),
-// body("password").isLength({min:7}).withMessage("password is required and must be at least 7 characters"),
-// body("name").isLength({min:1}).withMessage("name is required")
-// ,async (req, res) => {
-//   const errors = validationResult(req);
-//     if(!errors.isEmpty()){
-//         let a=errors.array().map(({msg,param,location})=>{
-//             return {
-//                 msg,
-//             }
-//         })
-//         return res.status(400).send({errors: a});
-//     }
-  
-//     let find = await Signup.findOne({ email: req.body.email })
-//     if (find) {
-//       console.log("find");
-//       return res.status(201).send({find});
-//     } else {
-//       const signup = await Signup.create(req.body);
-//       console.log("posted");
-//       return res.status(200).send({signup})
-//       // res.redirect("/email_login");
-//       // res.redirect("/phone_login");
-//     }
 
 module.exports = router;
