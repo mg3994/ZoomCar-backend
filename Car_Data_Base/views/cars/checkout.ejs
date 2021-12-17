@@ -9,7 +9,8 @@
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-     <link rel="stylesheet" href="css/checkout.css">
+     <!-- <link rel="stylesheet" href="css/checkout.css"> -->
+
 
      <style>
          body {
@@ -268,12 +269,12 @@ hr {
     text-align    : left;
     width         : 60%;
     color         : #fff;
-    font-size     : 12px;
+    font-size     : 14px;
     font-family   : sans-serif;
     font-weight   : 600;
     line-height   : 16px;
     letter-spacing: 0.8px;
-    padding: 1%;
+    padding: 3%;
     margin-left: 0%;
 }
      </style>
@@ -282,7 +283,7 @@ hr {
 
 <body>
     <div class="ranCarnavCheck">
-        <a href="/Booking_Summary/bookingSummary.html">
+        <a href="/cars/<%=car._id%>/checkout">
             <div class="navArrowCheck">
                 <i class="fas fa-arrow-left"></i>
             </div>
@@ -311,23 +312,23 @@ hr {
                 <h3>Trip Fare (66Kms without Fuel</h3>
             </div>
             <div id="tripFare">
-               <!-- <% let demo_price = car.price %>
-         <% for(let i=0;i<demo_price.length; i++) %>
-         <% { %>
-                   <%  if(demo_price[i]==="₹"){ >%
-                     <%  continue %>
-                   <%  } else{ %>
-                     <%  str+=demo_price[i] %>
-                 <%    } %>
-                 <%  } %>
-                 <%  str = Number(str) %>
-                  <% let tripFare = `₹ ${str*0.85}` %>  
-                   <% let damage = `₹ ${str*0.15}` %>   
-                  <%= tripFare %>
-             -->
-             <%=Number(car.price)*0.85%>
+              <% var str="" %>
+               <% var demo_price=car.price %>
+           
+              <% for(var i=0;i<demo_price.length; i++){ %>
+               <% if(demo_price[i]==="₹"){ %>
+                <%  continue %> 
+               <% } else{ %>
+               <%   str+=demo_price[i] %>
+               <% } %>
+              <% } %>
+      
+              <%str = Number(str) %>
+           
 
-             
+              <% var tripFare= str*.85 %>
+              <%= `₹${tripFare}` %>
+
             </div>
         </div>
         <hr>
@@ -336,7 +337,22 @@ hr {
                 <h3>Damage Protection Fee </h3>
             </div>
             <div class="ref" id="ref1">
-
+                <% var str="" %>
+                <% var demo_price=car.price %>
+            
+               <% for(var i=0;i<demo_price.length; i++){ %>
+                <% if(demo_price[i]==="₹"){ %>
+                 <%  continue %> 
+                <% } else{ %>
+                <%   str+=demo_price[i] %>
+                <% } %>
+               <% } %>
+       
+               <%str = Number(str) %>
+            
+ 
+               <% var damageProtection = str*.15 %>
+               <%= `₹${damageProtection}` %>
             </div>
 
         </div>
@@ -376,11 +392,11 @@ hr {
     </div>
 
     <div id="ranCheckout">
-        <a href="/paymentOption/paymentOption.html">
+             
             <div class="ranCheckoutSummary">
 
                 <div class="btn">
-                  <button>PROCEED TO PAY </button>  
+                    <a href="/cars/<%=car._id%>/checkout/paymentOption">  <button>PROCEED TO PAY </button> </a>
                 </div>
                 <div id="pay">
                     <%= car.price %>
