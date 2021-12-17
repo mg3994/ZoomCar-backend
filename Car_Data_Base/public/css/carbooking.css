@@ -6,7 +6,13 @@
       height: 85px;
       width: 100%;
   }
-  
+  #example{
+      width: 200px;
+  }
+
+  button{
+      background-color: red;
+  }
   #options {
       display: flex;
       justify-content: space-between;

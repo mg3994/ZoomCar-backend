@@ -166,7 +166,7 @@
 
                         <div>
 
-                            <img src="<%=car.img%>" alt="<%= car.name %>" </div>
+                            <img src="<%=car.img%>" alt="<%= car.name %>" id="example"> </div>
                             <div>
                                 <%= car.location %>
                                     <%= car.name %>
@@ -180,7 +180,7 @@
                                 <%= car.price %>
                                     <br>
                                     <p>
-                                        <a href="cars/<%= car._id %>">Book Now</a>
+                                        <a href="cars/<%= car._id %>"><button>Book Now</button> </a>
                                     </p>
                             </div>
                             <% }) %>
