@@ -62,6 +62,19 @@ router.get("/cars/:id/checkout", async (req, res) => {
 
 });
 
+router.get("/cars/:id/checkout/paymentOption", async (req, res) => {
+    try {
+            const car = await Car.findById(req.params.id).lean().exec();
+            return res.render( "cars/paymentOption",{
+           car
+            });
+    }
+    catch (e) {
+        return res.status(500).json({ status: "failed", message: e.message });
+    }
+
+});
+
 
 
 router.get("/cars/:id", async (req, res) => {

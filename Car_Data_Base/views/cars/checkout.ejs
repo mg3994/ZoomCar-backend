@@ -282,7 +282,7 @@ hr {
 
 <body>
     <div class="ranCarnavCheck">
-        <a href="/Booking_Summary/bookingSummary.html">
+        <a href="/cars/<%=car._id%>/checkout">
             <div class="navArrowCheck">
                 <i class="fas fa-arrow-left"></i>
             </div>
@@ -311,22 +311,8 @@ hr {
                 <h3>Trip Fare (66Kms without Fuel</h3>
             </div>
             <div id="tripFare">
-               <!-- <% let demo_price = car.price %>
-         <% for(let i=0;i<demo_price.length; i++) %>
-         <% { %>
-                   <%  if(demo_price[i]==="₹"){ >%
-                     <%  continue %>
-                   <%  } else{ %>
-                     <%  str+=demo_price[i] %>
-                 <%    } %>
-                 <%  } %>
-                 <%  str = Number(str) %>
-                  <% let tripFare = `₹ ${str*0.85}` %>  
-                   <% let damage = `₹ ${str*0.15}` %>   
-                  <%= tripFare %>
-             -->
+               
 
-             
             </div>
         </div>
         <hr>
@@ -375,11 +361,11 @@ hr {
     </div>
 
     <div id="ranCheckout">
-        <a href="/paymentOption/paymentOption.html">
+             
             <div class="ranCheckoutSummary">
 
                 <div class="btn">
-                  <button>PROCEED TO PAY </button>  
+                    <a href="/cars/<%=car._id%>/checkout/paymentOption">  <button>PROCEED TO PAY </button> </a>
                 </div>
                 <div id="pay">
                     <%= car.price %>

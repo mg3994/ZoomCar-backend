@@ -1,22 +1,22 @@
-let car_check = JSON.parse(localStorage.getItem("carShow"));
+// let car_check = JSON.parse(localStorage.getItem("carShow"));
 
-let start_Date = JSON.parse(localStorage.getItem("start_Date"));
-start_Date = start_Date[0] +" "+start_Date[1];
-console.log(start_Date);
+// let start_Date = JSON.parse(localStorage.getItem("start_Date"));
+// start_Date = start_Date[0] +" "+start_Date[1];
+// console.log(start_Date);
 
-let end_Date = JSON.parse(localStorage.getItem("end_Date"));
+// let end_Date = JSON.parse(localStorage.getItem("end_Date"));
 
-end_Date = end_Date[0] + " "+ end_Date[1];
-console.log(end_Date);
+// end_Date = end_Date[0] + " "+ end_Date[1];
+// console.log(end_Date);
 
-let carCheck=document.getElementById("carNavCheck");
-let navStartCheck = document.getElementById("navStartCheck");
-let navEnd = document.getElementById("navEndCheck");
-let tripFare = document.getElementById("tripFare");
-let damagePrice=document.getElementById("ref1");
+// let carCheck=document.getElementById("carNavCheck");
+// let navStartCheck = document.getElementById("navStartCheck");
+// let navEnd = document.getElementById("navEndCheck");
+// let tripFare = document.getElementById("tripFare");
+// let damagePrice=document.getElementById("ref1");
 
 let str="";
-function showPay() {
+// function showPay() {
         // let name = document.createElement('h4');
       
         // name.innerText = car_check.name;
@@ -28,8 +28,6 @@ function showPay() {
         // navEndCheck.append(end_Date);
      let demo_price = car.price;
      console.log(demo_price);
-
-        
         for(let i=0;i<demo_price.length; i++){
           if(demo_price[i]==="₹"){
             continue; 
@@ -39,14 +37,12 @@ function showPay() {
         }
 
         str = Number(str);
-        price.innerHTML = `₹ ${str*0.85}`;   
-        damage.innerHTML = `₹ ${str*0.15}`;   
-        damagePrice.append(damage);
-        tripFare.append(price);
-        
+        let TripFare= `₹ ${str*0.85}`;   
+        let damage= `₹ ${str*0.15}`;     
 
-}
-showPay(); 
+// }
+// showPay(); 
+module.exports={TripFare, damage}
 
-localStorage.setItem("totalFare",JSON.stringify(str));
+// localStorage.setItem("totalFare",JSON.stringify(str));
         
