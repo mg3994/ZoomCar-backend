@@ -87,6 +87,10 @@ a {
     width  : 50%;
     padding: 2%;
 }
+.temp{
+background-color: aquamarine;
+color: blue; 
+}
 
 .btn button {
     border        : none;
@@ -150,6 +154,7 @@ hr {
 
 
 }
+
 .txt3 {
     width         : 40%;
     text-align    : left;

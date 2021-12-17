@@ -64,9 +64,11 @@ router.get("/cars/:id/checkout", async (req, res) => {
 
 
 
-router.get("/:City", async (req, res) => {
+router.get("/cars/:id", async (req, res) => {
     try {
-            const car = await Car.find({City:req.params.City}).lean().exec();
+            const car = await Car.find({City:req.params.City})
+            .lean()
+            .exec();
             return res.render( "cars/carbooking",{
             car,
             });
