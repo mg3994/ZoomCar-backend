@@ -162,113 +162,128 @@
                     <p onclick="clickedCar(`<%= JSON.stringify(car) %>`)">
                     </p>
 
-                    <div id="cont">
+                    <div class="ranCarPage">
 
-                        <div>
+                        <div class="ranCarImage">
 
-                            <img src="<%=car.img%>" alt="<%= car.name %>" id="example"> </div>
-                            <div>
+                            <img src="<%=car.img%>" alt="<%= car.name %>" id="example">
+                        </div>
+                        <div class="ranCarDetails">
+                            <h4>
                                 <%= car.location %>
-                                    <%= car.name %>
-                                        <%= car.fuel %>
-                                            <%= car.seater %>
-                                                <%= car.Rating %>
+                            </h4>
+                            <h4>
+                                <%= car.name %>
+                            </h4>
+                            <h4>
+                                <%= car.fuel %>
+                            </h4>
+                            <h4>
+                                <%= car.seater %>
+                            </h4>
+                            <h4>
+                                <%= car.Rating %>
+                            </h4>
 
-                            </div>
+                        </div>
 
-                            <div>
+                        <div class="ranCarPrice">
+
+                            <h4>
                                 <%= car.price %>
-                                    <br>
-                                    <p>
-                                        <a href="cars/<%= car._id %>"><button>Book Now</button> </a>
-                                    </p>
+                            </h4>
+                            <div class="ranBookNow">
+                                <a href="cars/<%= car._id %>"><button>BOOK NOW</button> </a>
                             </div>
-                            <% }) %>
 
 
                         </div>
+                        <% }) %>
+
 
                     </div>
 
             </div>
 
-            <!-- side-bar-start -->
+        </div>
 
-            <div class="sidebar-component">
-                <div class="sidebar-ovl"></div>
-                <div class="sidebar">
-                    <a href="/Login&Signup/signup.html" class="f-1 a-i not-loggedin">
+        <!-- side-bar-start -->
+
+        <div class="sidebar-component">
+            <div class="sidebar-ovl"></div>
+            <div class="sidebar">
+                <a href="/Login&Signup/signup.html" class="f-1 a-i not-loggedin">
+                    <div class="icon">
+                        <i class="material-icons">
+                            <img src="/images/user.png" class="d-img">
+                        </i>
+                    </div>
+                    <span>Login or Signup</span>
+                </a>
+
+                <a href="#" class="user-logged-in">
+                    <div class="d-f jc-c">
+                        <div class="details f-1 as-fe">
+                            <h3 id="side_name">Pankaj Kumar</h3>
+                            <div id="side_email">raipankaj150@gmail.com</div>
+                            <div id="side_phone">8448669636</div>
+                        </div>
+
+                    </div>
+
+                </a>
+                <nav class="list">
+                    <a href="#" class="item f-1 a-i" onclick="changeCity()">
                         <div class="icon">
                             <i class="material-icons">
-                                <img src="/images/user.png" class="d-img">
+                                <img src="/images/loc.png" class="d-img">
                             </i>
                         </div>
-                        <span>Login or Signup</span>
-                    </a>
-
-                    <a href="#" class="user-logged-in">
-                        <div class="d-f jc-c">
-                            <div class="details f-1 as-fe">
-                                <h3 id="side_name">Pankaj Kumar</h3>
-                                <div id="side_email">raipankaj150@gmail.com</div>
-                                <div id="side_phone">8448669636</div>
-                            </div>
-
+                        <div>
+                            <div>Change city</div>
+                            <div class="sm">Delhi NCR</div>
                         </div>
-
                     </a>
-                    <nav class="list">
-                        <a href="#" class="item f-1 a-i" onclick="changeCity()">
-                            <div class="icon">
-                                <i class="material-icons">
-                                    <img src="/images/loc.png" class="d-img">
-                                </i>
-                            </div>
-                            <div>
-                                <div>Change city</div>
-                                <div class="sm">Delhi NCR</div>
-                            </div>
-                        </a>
-                        <a href="#" class="item f-1 a-i">
-                            <div class="icon">
-                                <i class="material-icons">
-                                    <img src="/images/supermiler_menu_logo.png">
-                                </i>
-                            </div>
-                            <div>
-                                <div>Supermiler Club</div>
-                            </div>
-                        </a>
-                        <a href="#" class="item f-1 a-i">
-                            <div class="icon">
-                                <i class="material-icons">
-                                    <img src="/images/des.png" class="d-img">
-                                </i>
-                            </div>
-                            <div>
-                                <div>Policies</div>
-                            </div>
-                        </a>
-                        <a href="#" class="item f-1 a-i">
-                            <div class="icon">
-                                <i class="material-icons">
-                                    <img src="/images/call.png" class="d-img">
-                                </i>
-                            </div>
-                            <div>
-                                <div>Help & Support</div>
-                            </div>
-                            <div>
-                        </a>
-                        <div class="item a-i logout">
-                            <i class="exit-icon" onclick="logout()"></i>
-                            Logout
+                    <a href="#" class="item f-1 a-i">
+                        <div class="icon">
+                            <i class="material-icons">
+                                <img src="/images/supermiler_menu_logo.png">
+                            </i>
                         </div>
-                    </nav>
-                </div>
+                        <div>
+                            <div>Supermiler Club</div>
+                        </div>
+                    </a>
+                    <a href="#" class="item f-1 a-i">
+                        <div class="icon">
+                            <i class="material-icons">
+                                <img src="/images/des.png" class="d-img">
+                            </i>
+                        </div>
+                        <div>
+                            <div>Policies</div>
+                        </div>
+                    </a>
+                    <a href="#" class="item f-1 a-i">
+                        <div class="icon">
+                            <i class="material-icons">
+                                <img src="/images/call.png" class="d-img">
+                            </i>
+                        </div>
+                        <div>
+                            <div>Help & Support</div>
+                        </div>
+                        <div>
+                    </a>
+                    <div class="item a-i logout">
+                        <i class="exit-icon" onclick="logout()"></i>
+                        Logout
+                    </div>
+                </nav>
             </div>
+        </div>
 
-            <!-- side-bar-end -->
+        <!-- side-bar-end -->
 
 
 

@@ -16,9 +16,18 @@ router.post("/", async (req, res) => {
 
 router.get("/cars", async (req, res) => {
     try {
-            const cars = await Car.find().lean().exec();
+        const page = +req.query.page || 1;
+        const size = +req.query.size || 3;
+        const offset = (page - 1) * size;
+       
+            const cars = await Car.find()
+            .skip(offset)
+            .limit(size)
+            .lean()
+            .exec();
+            const totalPage = Math.ceil((await Car.find().countDocuments()) / size);
             return res.render(  "cars/carbooking",{
-            cars,
+            cars,totalPage
             });
     }
     catch (e) {
