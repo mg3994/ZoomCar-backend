@@ -5,7 +5,9 @@ const { body, validationResult } = require('express-validator');
 const User = require("../models/user.model");
 
 router.get("", async (req, res) => {
-  res.render("email_login");
+  let message = '';
+  let msg = []
+  res.render("email_login",{message, msg});
 });
 
 router.post("", body("email").isEmail().withMessage("Email is required"),

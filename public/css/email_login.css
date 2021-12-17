@@ -10,6 +10,12 @@
   color: #1f1f1f;
   margin-top: 20px;
 }
+
+.errormsg {
+  color: red;
+}
+
+
 #paras {
   font-family: "IBM Plex Sans";
   font-size: 12px;

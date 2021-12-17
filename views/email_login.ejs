@@ -20,6 +20,12 @@
       </div>
       <div id="heading">Enter Email ID</div>
       <div id="paras">We'll verify if the email is registered with us</div>
+      <div class="errormsg"><%=message%></div>
+      <ul class="errormsg">
+       <% msg.forEach(function(el){ %>
+         <li><%= el.msg %></li>
+       <% }) %>
+      </ul>
       <form action="/email_login" method="POST" id="myForm">
         <input
           type="email"

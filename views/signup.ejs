@@ -20,8 +20,8 @@
     </div>
     <div id="heading">Please fill some details</div>
     <div id="paras">One last step to create a new account</div>
-    <div><%=message%></div>
-   <ul>
+    <div class="errormsg"><%=message%></div>
+   <ul class="errormsg">
     <% msg.forEach(function(el){ %>
       <li><%= el.msg %></li>
     <% }) %>
