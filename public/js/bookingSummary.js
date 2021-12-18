@@ -21,21 +21,10 @@ let dropoff = document.getElementById("ranDropoff");
 let carNav=document.getElementById("carNav");
 let navStart = document.getElementById("navStart");
 let navEnd = document.getElementById("navEnd");
-
-function showData() {
-
-        div1.append(name2,fuel);
-        rightData.append(img);
-        lefttData.append(div1);
-       carPrice.append(price)
-        carRating.append(Rating);
-        pickup.append(start_Date,pickUpLocation); 
-        dropoff.append(end_Date,dropOffLocation);
-        carNav.append(name);
-        navStart.append(start_Date);
-        navEnd.append(end_Date);
+pickup.append(start_Date,pickUpLocation); 
+dropoff.append(end_Date,dropOffLocation);
+navStart.append(start_Date);
+navEnd.append(end_Date);        
 
 
-}
 
-showData(); 
