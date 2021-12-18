@@ -171,16 +171,17 @@ We are very thankful for the support of my teammates and instructor for the comp
 
 
 - # Yashraj Maheshwari(fw11_325)
-![WhatsApp Mithilesh Image 2021-11-13 at 7 52 07 PM](https://user-images.githubusercontent.com/91541289/141654992-a9296907-a8a7-4f83-b8d6-4466632456f8.jpeg)
 
-[Linkedin]()
+![yashraj2](https://user-images.githubusercontent.com/91541289/146652652-9da6b35e-1a74-4afe-a3aa-37e1a383c34d.png)
 
-[Twitter]()
+[Linkedin](www.linkedin.com/in/yashraj-maheshwari)
 
-[Medium]()
+[Twitter](https://twitter.com/Yashraj_1505)
+
+[Medium](https://medium.com/@yashrajmaheshwari15)
 
 - # Abhishek Soni(nj2_096)
-![WhatsApp Raoji Image 2021-11-13 at 7 56 31 PM](https://user-images.githubusercontent.com/91541289/141654996-fac9822d-6873-45a9-adb7-7cf4ab94f31f.jpeg)
+
 
 [Linkedin](https://www.linkedin.com/in/abhishek-soni-953839107/)
 
