@@ -3,7 +3,7 @@
 # <span style="color:red"> Welcome Here!</span>
 
 Hello Readers,<br>
-It was during the final week which is depicted as the construct week. We have done this project with group of 6 members and build the clone of a very popular E-Commerce Car Self Drive Booking Website in the India for “Self Drive For Self Driven”, “Zoom Car” for Learning Purpose<br> This Project is our construct week project in Unit-3 an we give a name to our project called Zoomcar Preoject.<br> We have extended this project and implemented MongoDb, express and ejs uptill 3rd unit we used only frontend but in this 4th unit we have implemented backend technologies also.<br> I hope you will enjoy the reading….
+It was during the final week which is depicted as the construct week. We have done this project with group of 6 members and build the clone of a very popular E-Commerce Car Self Drive Booking Website in the India for “Self Drive For Self Driven”, “Zoom Car” for Learning Purpose<br> This Project is our construct week project in Unit-3 and we give a name to our project called Zoomcar Project.<br> I hope you will enjoy the reading….
 
 # <span style="color:red"> About Website: </span>
 
@@ -12,20 +12,17 @@ It was during the final week which is depicted as the construct week. We have do
 
 # <span style="color:red"> Tech Stack Used: </span>
 
-We have used Html5, CSS, Advance JavaScript, JSON Server, Fetch Web API, Import/Export, Paytm Payment API, Google API and local-storage for building this Project. We also used tools like GitHub for collaboration of our project, Slack & Zoom as means of a communication channel.
+We have used EJS, CSS, Advance JavaScript, JSON Server, Fetch Web API, Import/Export, Paytm Payment API, Google API and Express MongoDb Atlas realtime storage for building this Project. We also used tools like GitHub for collaboration of our project, Slack & Zoom as means of a communication channel.
 
-In 4th unit we learnt about backend technologies so we made some changes like from HTML5 we changed to ejs, local storage we moved to MongoDb.Now whole data is stored in a database and we are retreving data from database.
+
 
 
 # <span style="color:red"> Details of Tech stack used: </span>
 
-<b>HTML5:</b>
-
-we have used to build the basic structure of the website. All headings, Paragraphs, links, forms, etc. were structured by HTML.
 
 <b>EJS:</b>
 
-we have used ejs instead of HTML in this unit.
+we have used ejs in this unit.
 
  <b>CSS:</b>
 
@@ -35,16 +32,12 @@ We have used to add styling to the website. We used Advance CSS for Popup Modal 
 
 We have used to add logical functionalities to the web pages like the on Click function. We have added all the functionalities.
 
-<b> Local storage:</b>
-
-We have used local-storage as a database for storing users’ data, products details, and cart details.
-
 <b>MongoDb</b>
 
-We have used MongoDb as database for storing user's data, product details and cart details instead of local storage.
+We have used MongoDb atlas realtime storage as database for storing user's data, product details and cart details.
 
 <b> Fetch Web API:</b>
-We have used Fetch Web API for promise reuest and promise Handling using Async Await etc. 
+We have used Fetch Web API for promise request and promise Handling using Async Await etc. 
 
 <b> JSON Server:</b>
 We have used JSON Server for preparing Car Database.
@@ -52,10 +45,10 @@ We have used JSON Server for preparing Car Database.
 # <span style="color:red"> Experience of team: </span>
 
 Let us share our experience,<br>
-This entire journey of making the project was awesome. We have learned lots of things by applying to the real website and it gave us a lot of confidence. there were some more functionalities that could have been done, yeah the time didn’t permit us to go further. But we will surely improve it during the course of time in future .
+This entire journey of making the project was awesome. We have learned lots of things by applying to the real website and it gave us a lot of confidence. there were some more functionalities that could have been done, the time didn’t permit us to go further. But we will surely improve it during the course of time in future .
 
 
-## So jurney started from here!
+## So journey started from here!
 
 ### Snapshots of our project :- 
 
@@ -137,14 +130,14 @@ As we are working on a team, we have to compile our data into our project someti
 Functionality of each button on click and provide link over there . We have done this in precise manner. so that every thing will set up in a certain direction.<br>
 location for pick up and drop drag and drop from google map. <br>
 Preparing car database , acessing location , accessing calender data on the DOM.<br> 
-Realtime Payemnt Gateway etc <br>
+Realtime Payment Gateway etc <br>
 
 
 # <span style="color:red">Conclusion: </span>
-We are very thankful for the support of my teammates and instructor for the completion of project in due time. We will looks forward to add some feature and functionality which we left in this project for future expensions.
+We are very thankful for the support of my teammates and instructor for the completion of project in due time. We will look forward to add some feature and functionality which we left in this project for future expansion.
 
 
-# <span style="color:red"> Thank Your For Reading </span>
+# <span style="color:red"> Thank You For Reading </span>
 
 
 # <span style="color:red"> Team Members: </span>
@@ -177,7 +170,7 @@ We are very thankful for the support of my teammates and instructor for the comp
 [Medium](https://medium.com/@ranjankumar1757/zoom-car-clone-learning-purpose-65675e5c064f)
 
 
-- # Mithlesh Kumar (fw11_268)
+- # Yashraj (fw11_268)
 ![WhatsApp Mithilesh Image 2021-11-13 at 7 52 07 PM](https://user-images.githubusercontent.com/91541289/141654992-a9296907-a8a7-4f83-b8d6-4466632456f8.jpeg)
 
 [Linkedin]()
@@ -186,10 +179,10 @@ We are very thankful for the support of my teammates and instructor for the comp
 
 [Medium]()
 
-- # Raoji Patil (Fw11_170)
+- # Abhishek Soni(nj2_096)
 ![WhatsApp Raoji Image 2021-11-13 at 7 56 31 PM](https://user-images.githubusercontent.com/91541289/141654996-fac9822d-6873-45a9-adb7-7cf4ab94f31f.jpeg)
 
-[Linkedin](https://www.linkedin.com/in/raoji-patil-3355aa181/)
+[Linkedin](https://www.linkedin.com/in/abhishek-soni-953839107/)
 
 [Twitter]()
 
