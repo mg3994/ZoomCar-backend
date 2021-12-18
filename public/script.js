@@ -162,7 +162,7 @@ end_time.style.color = "black";
 // search Car Page
 function searchCar(e){
     e.preventDefault();
-    // window.location.href = "/cars"
+    window.location.href = "/cars"
     
 }
 
