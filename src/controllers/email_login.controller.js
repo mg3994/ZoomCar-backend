@@ -40,7 +40,7 @@ router.post("", body("email").isEmail().withMessage("Email is required"),
       //       return res.render("email_login", { message: "Please enter correct password", msg: [] });
       //   }
         console.log("login here");
-        res.render("home", { user})
+        res.render("index", { user})
     // } else {
     //   res.render("home", user);
     //   console.log("login successfull");

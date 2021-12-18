@@ -43,7 +43,7 @@ router.post("", body("phone_num").isLength({ min: 10, max: 10 }).withMessage("Ph
       //       return res.render("phone_login", { message: "Please enter correct password", msg: [] });
       //   }
         console.log("login here");
-        res.render("home", { user})
+        res.render("index", { user})
     // } else {
     //   res.render("home", user);
     //   console.log("login successfull");

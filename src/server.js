@@ -12,14 +12,20 @@ app.use(express.static("public"));
 const signupController = require("./controllers/signup.controller");
 const email_loginController = require("./controllers/email_login.controller");
 const phone_loginController = require("./controllers/phone_login.controller");
-app.get('/display', function(req, res) {
-  res.render('display');
+app.get('/login', function(req, res) {
+  res.render('login');
   });
+  
+app.get("/",(req,res)=>{
+  res.render("index",{user:{}});
+})
+
 app.use("/signup", signupController);
 app.use("/email_login", email_loginController);
 app.use("/phone_login", phone_loginController);
 
-app.listen(2345, async (req, res) => {
+// config
+app.listen(4500, async (req, res) => {
   await connect();
   console.log("Listening on port 2345....");
 });
