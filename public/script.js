@@ -162,7 +162,7 @@ end_time.style.color = "black";
 // search Car Page
 function searchCar(e){
     e.preventDefault();
-    window.location.href = "Car Database System\\Car database page\\Car Booking Page.html"
+    window.location.href = "/cars"
 }
 
 

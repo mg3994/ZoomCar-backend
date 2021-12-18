@@ -2,6 +2,7 @@ const Car = require("../models/car.models");
 const express = require("express");
 const router = express.Router();
 const path = require("path"); 
+const User= require("../models/user.model");
 
 
 router.post("/", async (req, res) => {
@@ -15,6 +16,7 @@ router.post("/", async (req, res) => {
     }
 });
 
+
 router.get("/cars", async (req, res) => {
     try {
         const page = +req.query.page || 2;
@@ -26,9 +28,10 @@ router.get("/cars", async (req, res) => {
             .limit(size)
             .lean()
             .exec();
+            const user=await User.findOne({}).lean().exec();
             const totalPage = Math.ceil((await Car.find().countDocuments()) / size);
             return res.render(  "cars/carbooking",{
-            cars,totalPage
+            cars,totalPage,user
             });
     }
     catch (e) {
