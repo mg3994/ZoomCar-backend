@@ -57,7 +57,7 @@
                 
               
         
-                <%if(user.name===undefined){%>
+                <%if(user===null){%>
                     <a href="/login" id="user_not_login">
                         <li id="login">Login/Signup</li>
                    </a>
@@ -265,7 +265,7 @@
                         <img src="images\user.png" class="d-img">
                     </i>
                 </div>
-                <%if(user.name===undefined){%>
+                <%if(user===null){%>
                     <span>Login or Signup</span>
                 <%}else{ %>  
                     <span>Log out</span>
@@ -273,7 +273,7 @@
                 
             </a>
 
-            <%if(user.name!==undefined){%>
+            <%if(user!==null){%>
                 <a href="#" class="user-logged-in">
                     <div class="d-f jc-c">
                         <div class="details f-1 as-fe">
