@@ -2,6 +2,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const connect = require("./configs/db");
 
+const fs = require('fs');
+const productController=require("./controllers/car.controllers");
+
 const app = express();
 
 app.use(express.json());
@@ -23,9 +26,10 @@ app.get("/",(req,res)=>{
 app.use("/signup", signupController);
 app.use("/email_login", email_loginController);
 app.use("/phone_login", phone_loginController);
+app.use("/",productController);
 
 // config
 app.listen(4500, async (req, res) => {
   await connect();
-  console.log("Listening on port 2345....");
+  console.log("Listening on port 4500....");
 });
