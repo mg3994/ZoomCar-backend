@@ -170,7 +170,7 @@ We are very thankful for the support of my teammates and instructor for the comp
 [Medium](https://medium.com/@ranjankumar1757/zoom-car-clone-learning-purpose-65675e5c064f)
 
 
-- # Yashraj (fw11_268)
+- # Yashraj Maheshwari(fw11_268)
 ![WhatsApp Mithilesh Image 2021-11-13 at 7 52 07 PM](https://user-images.githubusercontent.com/91541289/141654992-a9296907-a8a7-4f83-b8d6-4466632456f8.jpeg)
 
 [Linkedin]()
