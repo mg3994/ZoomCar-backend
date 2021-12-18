@@ -3,7 +3,7 @@
 # <span style="color:red"> Welcome Here!</span>
 
 Hello Readers,<br>
-It was during the final week which is depicted as the construct week. We have done this project with group of 6 members and build the clone of a very popular E-Commerce Car Self Drive Booking Website in the India for “Self Drive For Self Driven”, “Zoom Car” for Learning Purpose<br> This Project is our construct week project in Unit-3 an we give a name to our project called Zoomcar Preoject. <br> I hope you will enjoy the reading….
+It was during the final week which is depicted as the construct week. We have done this project with group of 6 members and build the clone of a very popular E-Commerce Car Self Drive Booking Website in the India for “Self Drive For Self Driven”, “Zoom Car” for Learning Purpose<br> This Project is our construct week project in Unit-3 an we give a name to our project called Zoomcar Preoject.<br> We have extended this project and implemented MongoDb, express and ejs uptill 3rd unit we used only frontend but in this 4th unit we have implemented backend technologies also.<br> I hope you will enjoy the reading….
 
 # <span style="color:red"> About Website: </span>
 
@@ -14,12 +14,18 @@ It was during the final week which is depicted as the construct week. We have do
 
 We have used Html5, CSS, Advance JavaScript, JSON Server, Fetch Web API, Import/Export, Paytm Payment API, Google API and local-storage for building this Project. We also used tools like GitHub for collaboration of our project, Slack & Zoom as means of a communication channel.
 
+In 4th unit we learnt about backend technologies so we made some changes like from HTML5 we changed to ejs, local storage we moved to MongoDb.Now whole data is stored in a database and we are retreving data from database.
+
 
 # <span style="color:red"> Details of Tech stack used: </span>
 
 <b>HTML5:</b>
 
 we have used to build the basic structure of the website. All headings, Paragraphs, links, forms, etc. were structured by HTML.
+
+<b>EJS:</b>
+
+we have used ejs instead of HTML in this unit.
 
  <b>CSS:</b>
 
@@ -32,6 +38,10 @@ We have used to add logical functionalities to the web pages like the on Click f
 <b> Local storage:</b>
 
 We have used local-storage as a database for storing users’ data, products details, and cart details.
+
+<b>MongoDb</b>
+
+We have used MongoDb as database for storing user's data, product details and cart details instead of local storage.
 
 <b> Fetch Web API:</b>
 We have used Fetch Web API for promise reuest and promise Handling using Async Await etc. 
@@ -122,7 +132,7 @@ This entire journey of making the project was awesome. We have learned lots of t
  <br>
 
 # <span style="color:red">Challenges: </span>
-We have faced few challenges during the while working on project we dealt with them , sometime it take lots of time but on the other hand we got some learning from that. some of the challenges are-<br>
+We have faced few challenges while working on project we dealt with them , sometime it take lots of time but on the other hand we got some learning from that. some of the challenges are-<br>
 As we are working on a team, we have to compile our data into our project sometime it messed.<br>
 Functionality of each button on click and provide link over there . We have done this in precise manner. so that every thing will set up in a certain direction.<br>
 location for pick up and drop drag and drop from google map. <br>
