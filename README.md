@@ -12,7 +12,7 @@ It was during the final week which is depicted as the construct week. We have do
 
 # <span style="color:red"> Tech Stack Used: </span>
 
-We have used EJS, CSS, Advance JavaScript, JSON Server, Fetch Web API, Import/Export, Paytm Payment API, Google API and Express MongoDb Atlas realtime storage for building this Project. We also used tools like GitHub for collaboration of our project, Slack & Zoom as means of a communication channel.
+We have used EJS, CSS, Advance JavaScript, Paytm Payment API, Google API and Express MongoDb Atlas realtime storage for building this Project. We also used tools like GitHub for collaboration of our project, Slack & Zoom as means of a communication channel.
 
 
 
@@ -170,7 +170,7 @@ We are very thankful for the support of my teammates and instructor for the comp
 [Medium](https://medium.com/@ranjankumar1757/zoom-car-clone-learning-purpose-65675e5c064f)
 
 
-- # Yashraj Maheshwari(fw11_)
+- # Yashraj Maheshwari(fw11_325)
 ![WhatsApp Mithilesh Image 2021-11-13 at 7 52 07 PM](https://user-images.githubusercontent.com/91541289/141654992-a9296907-a8a7-4f83-b8d6-4466632456f8.jpeg)
 
 [Linkedin]()
