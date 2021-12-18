@@ -12,17 +12,13 @@ It was during the final week which is depicted as the construct week. We have do
 
 # <span style="color:red"> Tech Stack Used: </span>
 
-We have used EJS, CSS, Advance JavaScript, Paytm Payment API, Google API and Express MongoDb Atlas realtime storage for building this Project. We also used tools like GitHub for collaboration of our project, Slack & Zoom as means of a communication channel.
-
-
-
+We have used EJS, CSS, Advance JavaScript, Paytm Payment API, Google API, Express, NPM packages, MongoDb Atlas realtime storage for building this Project. We also used tools like GitHub for collaboration of our project, Slack & Zoom as means of a communication channel.
 
 # <span style="color:red"> Details of Tech stack used: </span>
 
-
 <b>EJS:</b>
 
-we have used ejs in this unit.
+We have used Embedded JavaScript Template (ejs) for frontend to communicate with Backend.
 
  <b>CSS:</b>
 
@@ -34,13 +30,13 @@ We have used to add logical functionalities to the web pages like the on Click f
 
 <b>MongoDb</b>
 
-We have used MongoDb atlas realtime storage as database for storing user's data, product details and cart details.
+We have used MongoDb atlas realtime storage as database for storing user's data, car details.
 
-<b> Fetch Web API:</b>
-We have used Fetch Web API for promise request and promise Handling using Async Await etc. 
+<b> Express :</b>
+We have used Express for route using async await for asking data from the Backend etc. 
 
-<b> JSON Server:</b>
-We have used JSON Server for preparing Car Database.
+<b> Mongoose :</b>
+We have used Mongoose Package to established connection  express and Database.
 
 # <span style="color:red"> Experience of team: </span>
 
