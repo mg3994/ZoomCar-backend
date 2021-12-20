@@ -178,10 +178,11 @@ We are very thankful for the support of my teammates and instructor for the comp
 
 - # Abhishek Soni(nj2_096)
 
+![WhatsApp Image 2021-12-19 at 10 50 32 AM](https://user-images.githubusercontent.com/91541289/146781598-e405f03e-09e0-481e-9c86-76db40e42fe7.jpg)
 
 [Linkedin](https://www.linkedin.com/in/abhishek-soni-953839107/)
 
-[Twitter]()
+[Twitter] (https://twitter.com/abhi270794)
 
 [Medium]()
 
