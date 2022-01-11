@@ -50,31 +50,42 @@ This entire journey of making the project was awesome. We have learned lots of t
 
 - ## <span style="color:blue"> Home Page </span>
 
-<img width="377" alt="Home page" src="https://user-images.githubusercontent.com/91541289/141655245-3fca0980-bd2c-4ef8-975a-dea92564f3f5.png">
+![home-1](https://user-images.githubusercontent.com/91541289/146790574-517f5a2e-d314-4795-9e8d-b28601cec36a.png)
 
 - ## <span style="color:blue"> Home Page-Footer </span>
 
-<img width="377" alt="Home_footer" src="https://user-images.githubusercontent.com/91541289/141655232-50468202-ac61-4470-8ce6-fc01155fb9a8.png">
+![footer](https://user-images.githubusercontent.com/91541289/146790572-44d3aedf-62e3-442f-865e-ae5ee06c4293.png)
 
 - ## <span style="color:blue"> ZMS Page </span>
 
-<img width="400" alt="zms 1" src="https://user-images.githubusercontent.com/91541289/141674278-02cfc5da-d0b5-4bda-934c-026d9874a218.png">
+<img width="450" alt="zms 1" src="https://user-images.githubusercontent.com/91541289/146793779-9a561168-79aa-47b2-91a0-549f9e194f82.png">
 
 - ## <span style="color:blue"> ZMS Footer Page </span>
 
- <img width="391" alt="zms footer" src="https://user-images.githubusercontent.com/91541289/141674279-2037acee-01c0-4c3c-bc05-b14f49cd4f38.png">
+<img width="439" alt="zms footer" src="https://user-images.githubusercontent.com/91541289/146793783-d43823fb-290d-4915-9107-732f3c15685b.png">
  
  - ## <span style="color:blue"> Become a Host Page </span>
+ - 
   
- <img width="397" alt="host-1" src="https://user-images.githubusercontent.com/91541289/141674282-ef372701-6cf6-4928-a4e3-5ca4f8c66079.png">
+<img width="447" alt="host-1" src="https://user-images.githubusercontent.com/91541289/146793768-899bd94a-851f-4054-817f-c8a0d4b6b443.png">
+
  
- <img width="400" alt="host-2" src="https://user-images.githubusercontent.com/91541289/141674276-cd1681cb-dfa3-4e24-a502-5cf7e912f9da.png">
+<img width="450" alt="host-2" src="https://user-images.githubusercontent.com/91541289/146793775-67cb18be-9adb-44e6-b698-1a654a97f518.png">
+
  
- <img width="393" alt="host -3" src="https://user-images.githubusercontent.com/91541289/141674281-7748cb09-ae62-4fc9-a791-60103ce2fe8b.png">
+<img width="442" alt="host -3" src="https://user-images.githubusercontent.com/91541289/146793785-211c663e-6695-4425-933b-5e5a30821b33.png">
+
 
 - ## <span style="color:blue"> Home Page-Login/Signup </span>
 
-<img width="400" alt="login-SignUP" src="https://user-images.githubusercontent.com/91541289/141655524-89192b9d-b115-4c41-84cd-3a46206e67a7.png">
+![Register](https://user-images.githubusercontent.com/91541289/146790584-98200afb-7240-4c2d-b81b-eb10046e0a89.png)
+
+
+![email Register](https://user-images.githubusercontent.com/91541289/146790569-55b678c7-e611-4ad7-831c-52f6dd9d0115.png)
+
+
+![login](https://user-images.githubusercontent.com/91541289/146790578-02f3adf5-69ac-48b6-a595-4c7669911b5d.png)
+
 
 - ## <span style="color:blue"> Trip Booking-Select City </span>
 
@@ -82,23 +93,35 @@ This entire journey of making the project was awesome. We have learned lots of t
 
 - ## <span style="color:blue"> Trip Booking-Pickup and DropOff Location </span>
 
-<img width="400" alt="location" src="https://user-images.githubusercontent.com/91541289/141655233-e280ed51-c482-4afb-a4ec-50d5fb21aaac.png">
+
+![location](https://user-images.githubusercontent.com/91541289/146790575-3bd7f236-9c10-4a89-9514-f33e6a6e7461.png)
+
+
+![trip end](https://user-images.githubusercontent.com/91541289/146790585-0b592e99-624c-44f3-8656-26d5d69c9879.png)
+
+
+![trip end-2](https://user-images.githubusercontent.com/91541289/146790589-abdc7455-8aa7-4277-b407-b269cb4ffc81.png)
+
 
 - ## <span style="color:blue"> Car Booking Page </span>
 
-<img width="393" alt="Car_Page" src="https://user-images.githubusercontent.com/91541289/141655242-4c7b022a-bc17-420a-bb23-3ac126c6c21a.png">
+![car showroom](https://user-images.githubusercontent.com/91541289/146790595-8723b759-1445-484c-8dee-a2076857b946.png)
+
+
+![car showroom 2](https://user-images.githubusercontent.com/91541289/146790593-4c7de262-4633-4e75-983e-5516cbedaea6.png)
+
 
 - ## <span style="color:blue"> Selected Car Details </span>
 
-<img width="393" alt="car " src="https://user-images.githubusercontent.com/91541289/141655240-57eb44bb-36d4-4102-93a3-d39ac426d716.png">
+![booking Summary](https://user-images.githubusercontent.com/91541289/146790592-97203e87-e95e-4a0f-9a05-e61907c82d88.png)
 
 - ## <span style="color:blue"> Selected Car Payment BreakUp </span>
 
-<img width="400" alt="Pay Break" src="https://user-images.githubusercontent.com/91541289/141655238-d153aea6-3d2c-4967-b2c8-b5cd1187a6e1.png">
+![checkout](https://user-images.githubusercontent.com/91541289/146790562-03fa8212-2eaf-41dd-ab1a-fecf07c9a1b7.png)
 
 - ## <span style="color:blue"> Mode Of Payment </span>
 
-<img width="399" alt="mode of Pay" src="https://user-images.githubusercontent.com/91541289/141655235-20e1f725-b49f-47a8-9d06-8ea3963449f1.png">
+![payment Option](https://user-images.githubusercontent.com/91541289/146790581-b69cd1a4-8c9b-4208-8181-e8314bb3cde7.png)
 
 
 ![](- ## <span style="color:blue"> Payment through Paytm Wallet  </span>
@@ -113,7 +136,7 @@ This entire journey of making the project was awesome. We have learned lots of t
 
 <img width="200" alt="paytm-4" src="https://user-images.githubusercontent.com/91541289/141655628-4925d4c0-8a83-4ef1-bc04-94dc79f5b75e.png">
 
-<img width="400" alt="Payment confirm" src="https://user-images.githubusercontent.com/91541289/141655239-d9268c0e-9632-46b3-9d6e-188872933725.png">
+![confirmation](https://user-images.githubusercontent.com/91541289/146790566-d5fa503b-744c-432a-b2ab-f4310dc1a8a5.png)
 
 <br>
  <hr>
@@ -125,8 +148,8 @@ We have faced few challenges while working on project we dealt with them , somet
 As we are working on a team, we have to compile our data into our project sometime it messed.<br>
 Functionality of each button on click and provide link over there . We have done this in precise manner. so that every thing will set up in a certain direction.<br>
 location for pick up and drop drag and drop from google map. <br>
-Preparing car database , acessing location , accessing calender data on the DOM.<br> 
-Realtime Payment Gateway etc <br>
+Integration backend to frontend as we were using Ejs, strugled little bit during integration.<br> 
+Getting  realtime data from the backend and working on it <br>
 
 
 # <span style="color:red">Conclusion: </span>
@@ -157,13 +180,13 @@ We are very thankful for the support of my teammates and instructor for the comp
 [Medium]()
 
 - # Ranjan Kumar Thakur (fw12_053)
-![20211013_104347-removebg-preview (1)](https://user-images.githubusercontent.com/91541289/141654997-f5d7527f-292b-4e7d-844a-868ce935c6a2.png)
+![temp3-removebg-preview](https://user-images.githubusercontent.com/91541289/146794236-fbc208ad-50dd-480c-8db2-7e25db633c01.png)
 
-[Linkedin](www.linkedin.com/in/ranjan-kumar-thakur-47a65662)
+[Linkedin](https://linkedin.com/in/ranjan-kumar-thakur-47a65662)
 
-[Twitter](twitter.com/Ranjank87465651)
+[Twitter](https://twitter.com/Ranjank87465651)
 
-[Medium](https://medium.com/@ranjankumar1757/zoom-car-clone-learning-purpose-65675e5c064f)
+[Medium](https://medium.com/@ranjankumar1757/)
 
 
 - # Yashraj Maheshwari(fw11_325)
@@ -178,10 +201,11 @@ We are very thankful for the support of my teammates and instructor for the comp
 
 - # Abhishek Soni(nj2_096)
 
+![abhishek soni](https://user-images.githubusercontent.com/91541289/146787387-2a0d813b-e694-47de-8407-21a01832cd68.jpg)
 
 [Linkedin](https://www.linkedin.com/in/abhishek-soni-953839107/)
 
-[Twitter]()
+[Twitter](https://twitter.com/abhi270794)
 
 [Medium]()
 
