@@ -45,7 +45,7 @@
         </div>
     </div>
 
-    
+
     <!-- header start -->
     <div class="header" id="header">
         <div><img src="images\\ham.png" id="ham" onclick="showSideBar()"></div>
@@ -54,20 +54,22 @@
             <ul>
                 <!-- <li>Become a Host</li> -->
                 <a href="/host/host.html">Become a Host</a>
-                    <a href="/ZMS/ZMS.html">ZMS</a>
-            
-        
+                <a href="/ZMS/ZMS.html">ZMS</a>
+
+
                 <%if(user===null){%>
-                    <a href="/login" id="user_not_login">
+                    <a href="https://zoomcar-backend.herokuapp.com//login" id="user_not_login">
                         <li id="login">Login/Signup</li>
-                   </a>
-                <%}else{ %>  
-                   <li><%=user.name%></li>
-                <% } %>
-                <li id="user">
-                    <a href="#" id="nav_name"></a>
-                    <i class="icon-user"></i>
-                </li>
+                    </a>
+                    <%}else{ %>
+                        <li>
+                            <%=user.name%>
+                        </li>
+                        <% } %>
+                            <li id="user">
+                                <a href="#" id="nav_name"></a>
+                                <i class="icon-user"></i>
+                            </li>
             </ul>
         </div>
     </div>
@@ -141,7 +143,7 @@
                 <span id="top12">→</span>
                 <span id="top13"></span>
             </div>
-            
+
             <!-- Drop Off  Data -->
             <div id="top2">
                 <%= "ranjan1501" %>
@@ -297,5 +299,3 @@
 
 </html>
 <script src="/js/carbooking.js"></script>
-
-
